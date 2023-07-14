@@ -1,0 +1,31 @@
+[package]
+name = "howmanysmall/sillystate"
+description = "A minimal state library."
+license = "MIT"
+version = "1.0.0"
+registry = "https://github.com/UpliftGames/wally-index"
+realm = "shared"
+exclude = [
+	".gitignore",
+	".moonwave",
+	".styluaignore",
+	".vscode",
+	"aftman.toml",
+	"build",
+	"changelog.md",
+	"docs",
+	"moonwave.toml",
+	"scripts",
+	"selene.toml",
+	"sourcemap.json",
+	"stylua.toml",
+	"test",
+	"testez-companion.toml",
+	"wally.lock",
+]
+
+[dependencies]
+Locker = "howmanysmall/locker@1.0.0"
+Signal = "howmanysmall/better-signal@1.0.0"
+TaskQueue = "sleitnick/task-queue@0.1.1"
+t = "osyrisrblx/t@3.0.0"

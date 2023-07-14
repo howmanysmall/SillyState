@@ -1,0 +1,26 @@
+changelog = true
+gitSourceBranch = "main"
+
+[docusaurus]
+tagline = "A very barebones state management library."
+
+[[navbar.items]]
+href = "https://discord.gg/nhDpg96Srt"
+label = "Discord"
+position = "right"
+
+[home]
+enabled = true
+includeReadme = false
+
+[[home.features]]
+title = "Extremely simple"
+description = "This is as simple as a state management library can get."
+
+[[home.features]]
+title = "Extremely fast"
+description = "This is also as fast as a state management library can get (probably)."
+
+[[home.features]]
+title = "No more headaches"
+description = "Context? Reducers? Actions? Slices? What? None of that here!"
