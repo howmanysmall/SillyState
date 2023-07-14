@@ -11,7 +11,7 @@ sidebar_position: 2
 
 ```toml
 [dependencies]
-SillyState = "howmanysmall/sillystate@^1.0.0"
+SillyState = "howmanysmall/sillystate@^1.0.1"
 ```
 
 ### Method #2 - HttpService

@@ -2,7 +2,7 @@
 name = "howmanysmall/sillystate"
 description = "A minimal state library."
 license = "MIT"
-version = "1.0.0"
+version = "1.0.1"
 registry = "https://github.com/UpliftGames/wally-index"
 realm = "shared"
 exclude = [

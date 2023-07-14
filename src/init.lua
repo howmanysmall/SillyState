@@ -29,6 +29,8 @@ local function Constructor<T>(Defaults: T, ValidationFunction: nil | (Value: T) 
 		self.Changed:Fire(self.State, LastKeyChange)
 	end)
 
+	self.ValidationFunction = ValidationFunction
+
 	return self
 end
 
@@ -78,6 +80,10 @@ function SillyState:Set(Key: string, Value: unknown)
 	local PreviousValue = self.State[Key]
 	if if type(PreviousValue) == "table" then not EqualObjects(PreviousValue, Value) else PreviousValue == Value then
 		self.State[Key] = Value
+		if self.ValidationFunction then
+			assert(self.ValidationFunction(self.State))
+		end
+
 		self.TaskQueue:Add(Key)
 	end
 end
